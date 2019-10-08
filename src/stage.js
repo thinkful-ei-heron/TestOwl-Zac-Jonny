@@ -6,7 +6,7 @@ function Tile(props) {
 
 	const alt = `The avatar of ${props.name}`
 	return (
-		<div className='tile'>
+		<div className='Tile'>
 			<h2>{props.name}</h2>
 			<img src={props.avatar} alt={alt}/>
 		</div>
@@ -19,7 +19,7 @@ function Stage() {
 		})
 
 	return (
-		<section className='stage'>
+		<section className='Stage'>
 			{arr}
 		</section>
 	);

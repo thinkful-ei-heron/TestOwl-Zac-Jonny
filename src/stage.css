@@ -1,6 +1,16 @@
-.stage {
+.Stage {
 	display: flex;
 	text-align: center;
 	justify-content: space-evenly;
-	padding: 50px 0;
+	background-color: rgb(73, 73, 87);
+	height: 100%;
+}
+
+.Tile h2 {
+	background-color: rgb(48, 46, 46);
+	font-size: 16px;
+	color: white;
+	padding: 24px;
+	margin: -4px 0 auto;
+	border-radius: 4px;
 }
