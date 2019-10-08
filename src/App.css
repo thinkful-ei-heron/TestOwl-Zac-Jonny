@@ -1,0 +1,12 @@
+.App {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.App-list {
+	max-width: 300px;
+}
+
+.List {
+	background-color: red;
+}

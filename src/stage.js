@@ -1,5 +1,4 @@
 import React from 'react';
-import participants from './store';
 import './stage.css';
 
 function Tile(props) {
@@ -13,8 +12,8 @@ function Tile(props) {
 	);
 }
 
-function Stage() {
-	const arr = participants.participants.map(item => {
+function Stage(props) {
+	const arr = props.store.map(item => {
 			if (item.onStage) return <Tile key={item.id} name={item.name} avatar={item.avatar} />;
 		})
 

@@ -4,25 +4,24 @@ import './App.css';
 import List from "./List";
 import Chat from "./Chat";
 import store from "./store";
+import Stage from './stage';
 
 function App() {
   const toggleChat = false;
   return (
     <div className="App">
-        <header class="App-header">
-            <h1>Trelloyes!</h1>
-        </header>
         {(toggleChat)
-            ? (<div class="App-list">
+            ? (<ul className="App-list">
                 {store.participants.map(item => (item.inSession) ? (
                     <List key={item.id} name={item.name} avatar={item.avatar} onStage={item.onStage}/>) : '')}
-            </div>)
-            : (<div class="App-list">
-                {store.chatEvents.map(item => (item.message)
-                    ? (<Chat key={item.timestamp} id={item.participantId} type={item.type} message={item.message}
+            </ul>)
+            : (<div className="App-list">
+                {store.chatEvents.map((item,index) => (item.message)
+                    ? (<Chat key={index} id={item.participantId} type={item.type} message={item.message}
                              time={item.time}/>)
-                    : <Chat key={item.timestamp} id={item.participantId} type={item.type}/>)}
+                    : <Chat key={index} id={item.participantId} type={item.type}/>)}
             </div>)}
+        <Stage key='1' store={store.participants} />
     </div>
   );
 }
