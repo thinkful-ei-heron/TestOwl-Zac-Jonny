@@ -9,6 +9,7 @@ function Chat(props) {
     const participate = store.participants.find(person => person.id === id);
     const avatar = participate.avatar;
     const name = participate.name;
+    const alt = `The avatar of ${name}`
     const type = props.type;
 
     if (props.message) {
@@ -16,8 +17,8 @@ function Chat(props) {
         const time = props.time;
 
         return (
-            <li>
-                <img src={avatar}/> {name} {new Date(time).toTimeString()}
+            <li className='List'>
+                <img src={avatar} alt={alt} /> {name} {new Date(time).toTimeString()}
                 <div>{message}
                 </div>
             </li>

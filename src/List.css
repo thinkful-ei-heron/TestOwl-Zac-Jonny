@@ -1,7 +1,7 @@
-.List img {
-	height: 50px;
+.List {
+	list-style: none;
 }
 
-.List {
-	background-color: red;
+.List img {
+	height: 50px;
 }
