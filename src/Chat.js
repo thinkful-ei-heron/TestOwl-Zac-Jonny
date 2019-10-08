@@ -20,9 +20,9 @@ function Chat(props) {
 
         return (
             <li className='msg'>
-                <img src={avatar} alt={alt} /> <b>{name}</b> <span className='emote'>{stamp}</span>
-                <div>{message}
-                </div>
+                <img className='chatAvatar' src={avatar} alt={alt} />
+                <div> <b>{name}</b> <span className='emote'>{stamp}</span>
+                    <br />{message}</div>
             </li>
         );
     } else {

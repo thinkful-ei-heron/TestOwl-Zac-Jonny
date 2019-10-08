@@ -9,9 +9,11 @@ function List(props) {
     const alt = `The avatar of ${name}`
     const onStage = props.onStage;
     return (
-        <li className="List">
-            <img src={avatar} alt={alt} />{name}
-            {onStage ? (<div> on stage</div>) : (<div> in session</div>)}
+        <li className="msg">
+            <img className='chatAvatar' src={avatar} alt={alt} />
+            <div><b>{name}</b>
+            {onStage ? (<div className='staged'> on stage</div>) : (<div className='staged'> in session</div>)}
+            </div>
         </li>
     );
 }
