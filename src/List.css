@@ -1,7 +1,19 @@
-.List {
+.App-list li {
 	list-style: none;
+	text-align: center;
+	min-width: 300px;
+	max-width: 500px;
 }
 
-.List img {
+.msg {
+	color: rgb(65, 65, 65);
+	text-align: left;
+}
+
+.msg img {
 	height: 50px;
+}
+
+.emote {
+	color: gray;
 }
