@@ -1,4 +1,51 @@
 .App {
 	display: flex;
 	justify-content: flex-start;
+	min-height: 90vh;
+	max-height: 90vh;
+	overflow: hidden;
+}
+.Tab-buttons {
+	height: 50px;
+	border: lightgray 1px solid;
+	justify-content: space-evenly;
+	display: flex;
+}
+.Tab-buttons button{
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: large;
+}
+.Tab-buttons button:focus{
+	border-bottom: 2px lightblue solid;
+	outline: none;
+}
+.Tab-buttons .active{
+	color: lightblue;
+	border-bottom: 2px lightblue solid;
+}
+.Footer {
+	width: 100%;
+	display: block;
+	background-color: white;
+	min-height: 9vh;
+	max-height: 9vh;
+	border-top: lightgray solid 1px;
+}
+.Emotes {
+	justify-content: space-evenly;
+	width: 360px;
+	display: flex;
+	height: -webkit-fill-available;
+}
+.Emotes > button{
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	margin: auto;
+	cursor: pointer;
+}
+.Emotes > button:focus{
+	outline: none;
 }
