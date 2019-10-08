@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the List as expected 1`] = `
+<section
+  className="stage"
+>
+  <div
+    className="tile"
+  >
+    <h2>
+      Koren Templeton
+    </h2>
+    <img
+      alt="The avatar of Koren Templeton"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+  </div>
+  <div
+    className="tile"
+  >
+    <h2>
+      Ashla Attwool
+    </h2>
+    <img
+      alt="The avatar of Ashla Attwool"
+      src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+    />
+  </div>
+</section>
+`;

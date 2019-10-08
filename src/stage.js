@@ -15,7 +15,7 @@ function Tile(props) {
 
 function Stage() {
 	const arr = participants.participants.map(item => {
-			if (item.onStage) return <Tile name={item.name} avatar={item.avatar} />;
+			if (item.onStage) return <Tile key={item.id} name={item.name} avatar={item.avatar} />;
 		})
 
 	return (
