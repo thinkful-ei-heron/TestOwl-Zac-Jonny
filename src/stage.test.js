@@ -10,7 +10,7 @@ it('renders without crashing', () => {
 	ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders the List as expected', () => {
+it('renders the Stage as expected', () => {
 	const stage = renderer
 		.create(<Stage />)
 		.toJSON();
