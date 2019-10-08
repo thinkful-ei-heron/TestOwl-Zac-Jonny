@@ -1,23 +1,16 @@
 import React from 'react';
-import Card from './Card.js';
 
 import './App.css';
 
 function List(props) {
-    const header = props.header;
-    const cards = props.cards;
+    const name = props.name;
+    const avatar = props.avatar;
+    const onStage = props.onStage;
     return (
-        <section className="List">
-            <header className="List-header">
-                <h2>{header}</h2>
-            </header>
-            <div className="List-cards">
-                {cards.map(card => (<Card key={card.id} header={card.title} desc={card.content}/>))}
-                <button type="button" className="List-add-button">
-                    + Add Random Card
-                </button>
-            </div>
-        </section>
+        <li className="List">
+            <img src={avatar} height='100px'/>{name}
+            {onStage ? (<div> on stage</div>) : (<div> in session</div>)}
+        </li>
     );
 }
 
