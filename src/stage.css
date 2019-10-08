@@ -1,0 +1,6 @@
+.stage {
+	display: flex;
+	text-align: center;
+	justify-content: space-evenly;
+	padding: 50px 0;
+}
